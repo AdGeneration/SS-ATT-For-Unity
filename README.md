@@ -1,4 +1,9 @@
 # SS App Tracking Transparency for Unity
+## 導入
+[こちら](https://github.com/AdGeneration/SS-ATT-For-Unity/releases/)から最新版のUnityPackageをダウンロードして
+
+Unityプロジェクトにインポートしてください。
+
 ## 実装
 ### 利用可能かどうかを取得する
 ```cs
@@ -8,7 +13,7 @@ info.plistに`NSUserTrackingUsageDescription`がない場合や、iOS14以降で
 
 必ず、この値を取得してからご利用ください。
 
-## トラッキングの認証ステータスの取得
+### トラッキングの認証ステータスの取得
 ```cs
 var status = Supership.ATT.TrackingManager.TrackingAuthorizationStatus;
 ```
